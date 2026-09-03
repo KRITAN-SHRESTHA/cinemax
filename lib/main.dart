@@ -1,4 +1,5 @@
-import 'package:cinemax/features/auth/presentation/pages/onboarding_page.dart';
+import 'package:cinemax/core/utils/color.dart';
+import 'package:cinemax/features/auth/presentation/pages/login_sign_up_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -11,9 +12,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeData(scaffoldBackgroundColor: kSoft),
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: OnBoardingPage()),
+      home: Scaffold(body: LoginSignUPPage()),
     );
   }
 }
