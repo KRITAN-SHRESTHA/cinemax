@@ -17,3 +17,11 @@ const String kSignUp = 'Sign Up';
 const String kAlreadyHaveAccount = 'I already have an account? ';
 const String kLogin = 'Login';
 const String kOrSignUpWith = 'Or Sign up with';
+
+//* Login
+const String kLoginGreeting = 'Hi, Tiffany';
+const String kLoginSubtitle = 'Welcome back! Please enter\nyour details.';
+const String kEmailAddress = 'Email Address';
+const String kEmailHint = '@gmail.com';
+const String kPassword = 'Password';
+const String kForgotPassword = 'Forgot Password?';
