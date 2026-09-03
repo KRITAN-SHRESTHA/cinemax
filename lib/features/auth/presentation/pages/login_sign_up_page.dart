@@ -36,7 +36,12 @@ class LoginSignUPPage extends StatelessWidget {
                       style: textH5SemiBold.copyWith(color: kGrey, height: 1.5),
                     ),
                     64.verticalBox,
-                    BuildButton(text: kSignUp, onPressed: () {}),
+                    BuildButton(
+                      text: kSignUp,
+                      onPressed: () {
+                        context.router.push(const SignUpRoute());
+                      },
+                    ),
                     20.verticalBox,
                     _LoginPrompt(
                       onPressed: () {
