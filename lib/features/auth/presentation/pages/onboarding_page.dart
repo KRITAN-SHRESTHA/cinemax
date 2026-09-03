@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:cinemax/core/utils/assets.dart';
 import 'package:cinemax/core/utils/color.dart';
 import 'package:cinemax/core/utils/string.dart';
@@ -51,6 +52,7 @@ const PageDecoration _pageDecoration = PageDecoration(
   bodyFlex: 2,
 );
 
+@RoutePage()
 class OnBoardingPage extends StatefulWidget {
   const OnBoardingPage({super.key});
 
@@ -124,7 +126,6 @@ class OnBoardingPageState extends State<OnBoardingPage> {
   Widget build(BuildContext context) {
     return IntroductionScreen(
       key: introKey,
-      globalBackgroundColor: kSoft,
       curve: Curves.easeInOut,
       pages: [for (final _OnboardingItem item in _items) _buildPage(item)],
       //* The card draws the dots and the next button, so the package's own

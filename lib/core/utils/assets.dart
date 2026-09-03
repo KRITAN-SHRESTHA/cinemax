@@ -7,3 +7,5 @@ const String kOnboarding3 = 'assets/images/onboarding3.png';
 const String kAppleIcon = 'assets/svg/apple_icon.svg';
 const String kFacebookIcon = 'assets/svg/facebook_icon.svg';
 const String kGoogleIcon = 'assets/svg/google_icon.svg';
+
+const String kBackIcon = 'assets/svg/back_icon.svg';

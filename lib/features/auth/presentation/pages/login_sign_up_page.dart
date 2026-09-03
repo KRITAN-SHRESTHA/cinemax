@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:cinemax/config/routes/routes.dart';
 import 'package:cinemax/core/utils/assets.dart';
 import 'package:cinemax/core/utils/color.dart';
 import 'package:cinemax/core/utils/extension.dart';
@@ -15,7 +16,6 @@ class LoginSignUPPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kDark,
       body: SafeArea(
         //* Centred on a roomy screen, scrollable once the keyboard or a small
         //* screen leaves less room than the content needs.
@@ -38,7 +38,11 @@ class LoginSignUPPage extends StatelessWidget {
                     64.verticalBox,
                     BuildButton(text: kSignUp, onPressed: () {}),
                     20.verticalBox,
-                    _LoginPrompt(onPressed: () {}),
+                    _LoginPrompt(
+                      onPressed: () {
+                        context.router.push(const LoginRoute());
+                      },
+                    ),
                     32.verticalBox,
                     const _OrDivider(),
                     40.verticalBox,
