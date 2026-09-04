@@ -55,3 +55,14 @@ const String kCreateNewPasswordSubtitle = 'Enter your new password';
 const String kNewPassword = 'New Password';
 const String kConfirmPassword = 'Confirm Password';
 const String kReset = 'Reset';
+
+//* Dashboard tabs
+const String kHomeLabel = 'Home';
+const String kSearchLabel = 'Search';
+const String kDownloadLabel = 'Download';
+const String kProfileLabel = 'Profile';
+
+//* Home
+const String kHomeGreeting = 'Hello, Smith';
+const String kHomeSubtitle = "Let's stream your favorite movie";
+const String kSearchHint = 'Search a title..';
