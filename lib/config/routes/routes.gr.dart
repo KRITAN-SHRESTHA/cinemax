@@ -27,6 +27,38 @@ class CreateNewPasswordRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [DashboardPage]
+class DashboardRoute extends PageRouteInfo<void> {
+  const DashboardRoute({List<PageRouteInfo>? children})
+    : super(DashboardRoute.name, initialChildren: children);
+
+  static const String name = 'DashboardRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const DashboardPage();
+    },
+  );
+}
+
+/// generated route for
+/// [DownloadPage]
+class DownloadRoute extends PageRouteInfo<void> {
+  const DownloadRoute({List<PageRouteInfo>? children})
+    : super(DownloadRoute.name, initialChildren: children);
+
+  static const String name = 'DownloadRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const DownloadPage();
+    },
+  );
+}
+
+/// generated route for
 /// [ForgotPasswordPage]
 class ForgotPasswordRoute extends PageRouteInfo<void> {
   const ForgotPasswordRoute({List<PageRouteInfo>? children})
@@ -38,6 +70,22 @@ class ForgotPasswordRoute extends PageRouteInfo<void> {
     name,
     builder: (data) {
       return const ForgotPasswordPage();
+    },
+  );
+}
+
+/// generated route for
+/// [HomePage]
+class HomeRoute extends PageRouteInfo<void> {
+  const HomeRoute({List<PageRouteInfo>? children})
+    : super(HomeRoute.name, initialChildren: children);
+
+  static const String name = 'HomeRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const HomePage();
     },
   );
 }
@@ -86,6 +134,38 @@ class OnBoardingRoute extends PageRouteInfo<void> {
     name,
     builder: (data) {
       return const OnBoardingPage();
+    },
+  );
+}
+
+/// generated route for
+/// [ProfilePage]
+class ProfileRoute extends PageRouteInfo<void> {
+  const ProfileRoute({List<PageRouteInfo>? children})
+    : super(ProfileRoute.name, initialChildren: children);
+
+  static const String name = 'ProfileRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ProfilePage();
+    },
+  );
+}
+
+/// generated route for
+/// [SearchPage]
+class SearchRoute extends PageRouteInfo<void> {
+  const SearchRoute({List<PageRouteInfo>? children})
+    : super(SearchRoute.name, initialChildren: children);
+
+  static const String name = 'SearchRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SearchPage();
     },
   );
 }
