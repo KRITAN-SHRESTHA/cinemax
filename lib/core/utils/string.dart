@@ -66,3 +66,9 @@ const String kProfileLabel = 'Profile';
 const String kHomeGreeting = 'Hello, Smith';
 const String kHomeSubtitle = "Let's stream your favorite movie";
 const String kSearchHint = 'Search a title..';
+
+//* Home sections
+const String kCategories = 'Categories';
+const String kMostPopular = 'Most popular';
+const String kSeeAll = 'See All';
+const String kNoMoviesYet = 'Nothing in here yet';

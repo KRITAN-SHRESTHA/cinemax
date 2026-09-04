@@ -17,6 +17,15 @@ const String kDownloadIcon = 'assets/svg/download_icon.svg';
 const String kProfileIcon = 'assets/svg/profile_icon.svg';
 
 //home page
-const String kAvatarIcon = 'assets/svg/Avatar.svg';
+const String kAvatarIcon = 'assets/images/Avatar.png';
 const String kFilterIcon = 'assets/svg/filter.svg';
 const String kWishListIcon = 'assets/svg/wishlist.svg';
+
+// home slider
+const String kBg = 'assets/images/Bg.png';
+const String kImage = 'assets/images/Image.png';
+
+// category image
+const String kAction = 'assets/images/Card.png';
+const String kComedy = 'assets/images/card1.png';
+const String kDrama = 'assets/images/card2.png';

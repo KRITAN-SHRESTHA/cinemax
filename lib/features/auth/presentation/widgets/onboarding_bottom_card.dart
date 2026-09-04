@@ -1,6 +1,7 @@
 import 'package:cinemax/core/utils/color.dart';
 import 'package:cinemax/core/utils/extension.dart';
 import 'package:cinemax/core/utils/style.dart';
+import 'package:cinemax/features/auth/presentation/widgets/page_indicator.dart';
 import 'package:flutter/material.dart';
 
 typedef OnboardingCopy = ({String title, String description});
@@ -50,7 +51,7 @@ class OnboardingBottomCard extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              PageIndicator(pageCount: pages.length, page: page),
+              PageIndicator(itemCount: pages.length, page: page),
               NextButton(
                 onTap: onNext,
                 segments: pages.length,
@@ -123,40 +124,6 @@ class _Copy extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-}
-
-class PageIndicator extends StatelessWidget {
-  const PageIndicator({super.key, required this.pageCount, required this.page});
-
-  final int pageCount;
-
-  //* Same live offset as the card: the dot switches at the halfway point.
-  final double page;
-
-  @override
-  Widget build(BuildContext context) {
-    final int currentIndex = page.round().clamp(0, pageCount - 1);
-
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      spacing: 8,
-      children: [
-        for (int index = 0; index < pageCount; index++)
-          AnimatedContainer(
-            duration: const Duration(milliseconds: 250),
-            curve: Curves.easeInOut,
-            width: index == currentIndex ? 24 : 6,
-            height: 6,
-            decoration: BoxDecoration(
-              color: kLightBlue.withValues(
-                alpha: index == currentIndex ? 1 : 0.4,
-              ),
-              borderRadius: BorderRadius.circular(3),
-            ),
-          ),
-      ],
     );
   }
 }
